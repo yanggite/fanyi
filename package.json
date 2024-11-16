@@ -1,0 +1,16 @@
+{
+  "name": "fanyi",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "gen": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "xlsx": "^0.18.5"
+  }
+}
