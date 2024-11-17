@@ -18,8 +18,8 @@ const chineseObj = {};
 
 jsonData.slice(1).forEach((row) => {
   const key = row[0];
-  const english = row[1] || "";
-  const chinese = row[2] || "";
+  const english = row[2] || "";
+  const chinese = row[1] || "";
 
   if (key) {
     englishObj[key] = english;
