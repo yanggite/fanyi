@@ -16,18 +16,16 @@ const englishObj = {};
 const chineseObj = {};  
   
 
-jsonData.slice(1).forEach((row) => {  
-  const key = row[0];  
-  const english = row[1];  
-  const chinese = row[2];  
-  
-  if (key && english) {  
-    englishObj[key] = english;  
-  }  
-  if (key && chinese) {  
-    chineseObj[key] = chinese;  
-  }  
-});  
+jsonData.slice(1).forEach((row) => {
+  const key = row[0];
+  const english = row[1] || "";
+  const chinese = row[2] || "";
+
+  if (key) {
+    englishObj[key] = english;
+    chineseObj[key] = chinese;
+  }
+});
   
 
 const englishJsonFilePath = path.join(__dirname, 'english.json');  
